@@ -15,139 +15,138 @@
   --mainGrey: #7c7c7c;
   --secondaryGrey: #ccc;
   --mainSpacing: 0.1rem;
-  --mainTransition:all 0.3s linear;
-  --mainRed:#db2777;
-  --bodyColor:#f6f6f6;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
 }
 
-body{
-    color: var(--mainBlack);
-    background-color: var(--bodyColor);
-    display: flex;
-    flex-direction: column;
-    align-items:center ;
-
+body {
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header{
-    min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.from-container{
-    display: flex;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.todo-container{
-    margin-top: 1rem;
-    width: 25rem;
+.from-container {
+  display: flex;
 }
 
-form{
-    width: 25rem;
-    background-color: var(--mainWhite);
-    border-radius: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid var(--secondaryGrey);
-    overflow: hidden;
+.todo-container {
+  margin-top: 1rem;
+  width: 25rem;
 }
-form input{
-    flex: 1;
-    font-weight: bold;
+
+form {
+  width: 25rem;
+  background-color: var(--mainWhite);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--secondaryGrey);
+  overflow: hidden;
+}
+form input {
+  flex: 1;
+  font-weight: bold;
 }
 
 form input,
 form button {
-    border: none;
-    outline: none;
-    background-color: none;
-    font-size: 1rem;
-    padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: none;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
-form button{
-    color: var(--primaryColor);
-    cursor: pointer;
-    transition: all 0.3 ease-in-out;
+form button {
+  color: var(--primaryColor);
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
 }
 form button:hover {
-background-color: var(--primaryColor);
-color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
 }
 .todo {
-    background-color: var(--mainWhite);
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    display: flex;
-    margin-bottom: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3 ease;
+  background-color: var(--mainWhite);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3 ease;
 }
 .todo .todo__title {
-    color: var(--primaryColor);
-    font-weight: bold;
-    flex: 1;
+  color: var(--primaryColor);
+  font-weight: bold;
+  flex: 1;
 }
 .todo button {
-    display: block;
-    font-size: 1rem;
-    padding: 0.5rem;
-    cursor: pointer;
-    background-color: transparent;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .fa-trash-alt {
-    color: var(--mainRed);
+  color: var(--mainRed);
 }
-.fa-check-square{
-    color: var(--primaryColor);
+.fa-check-square {
+  color: var(--primaryColor);
 }
-.completed{
-    text-decoration: line-through;
-    opacity: 0.5;
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
-select{
-    appearance: none;
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 1rem;
-    color: var(--primaryColor);
+select {
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  color: var(--primaryColor);
 }
-.select{
-    margin-left: 1rem;
-    background-color: var(--mainWhite);
-    cursor: pointer;
-    width: 10rem;
-    position: relative;
-    border: 2px solid var(--secondaryGrey);
-    font-weight: bold;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-.select::after{
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    color: var(--primaryColor);
-    pointer-events: none;
+.select {
+  margin-left: 1rem;
+  background-color: var(--mainWhite);
+  cursor: pointer;
+  width: 10rem;
+  position: relative;
+  border: 2px solid var(--secondaryGrey);
+  font-weight: bold;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-button{
-    border: none;
-    outline: 0;
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  color: var(--primaryColor);
+  pointer-events: none;
 }
-button > i{
-    pointer-events: none;
+
+button {
+  border: none;
+  outline: 0;
+}
+button > i {
+  pointer-events: none;
 }
